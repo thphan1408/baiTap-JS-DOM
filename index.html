@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bài tập DOM</title>
+    <meta name="description" content="Bài tập DOM">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-3">Bài tập DOM - BÀI TẬP JS BUỔI 2 - 3</h1>
+        <ul class="nav nav-pills m-5 d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item p-2" role="presentation">
+                <button class="nav-link active" id="pills-salaryStaff-tab" data-toggle="pill" data-target="#pills-salaryStaff"
+                    type="button" role="tab" aria-controls="pills-salaryStaff" aria-selected="true">Tính lương nhân viên</button>
+            </li>
+    
+            <li class="nav-item p-2" role="presentation">
+                <button class="nav-link" id="pills-avarage-tab" data-toggle="pill" data-target="#pills-avarage"
+                    type="button" role="tab" aria-controls="pills-avarage" aria-selected="false">Tính giá trị trung bình</button>
+            </li>
+    
+            <li class="nav-item p-2" role="presentation">
+                <button class="nav-link" id="pills-convertUSDToVND-tab" data-toggle="pill" data-target="#pills-convertUSDToVND"
+                    type="button" role="tab" aria-controls="pills-convertUSDToVND" aria-selected="false">Quy đổi tiền</button>
+            </li>
+    
+            <li class="nav-item p-2" role="presentation">
+                <button class="nav-link" id="pills-rectangle-tab" data-toggle="pill" data-target="#pills-rectangle"
+                    type="button" role="tab" aria-controls="pills-rectangle" aria-selected="false">Tính hình chữ nhật</button>
+            </li>
+    
+            <li class="nav-item p-2" role="presentation">
+                <button class="nav-link" id="pills-total2Number-tab" data-toggle="pill" data-target="#pills-total2Number"
+                    type="button" role="tab" aria-controls="pills-total2Number" aria-selected="false">Tính tổng 2 ký số</button>
+            </li>
+        </ul>
+    
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Tính tiền lương nhân viên -->
+            <div class="tab-pane fade show active" id="pills-salaryStaff" role="tabpanel" aria-labelledby="pills-salaryStaff-tab">
+                <section id="salaryStaff">
+                    <div class="container mt-3 d-flex justify-content-center w-100">
+                        <div class="border border-primary">
+                            <div class="title text-center mt-3">
+                                <h2 class="bg-primary text-white d-inline-block p-3">Tính tiền lương nhân viên</h2>
+                            </div>
+    
+                            <form action="" class="form-inline m-3">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputSalary" class="mr-3">Nhập lương một ngày:</label>
+                                    <input type="number" class="form-control" id="inputSalary"
+                                        placeholder="Nhập lương một ngày">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputDayWork" class="mr-3">Nhập số ngày làm:</label>
+                                    <input type="number" class="form-control" id="inputDayWork"
+                                        placeholder="Nhập số ngày làm">
+                                </div>
+                            </form>
+    
+                            <div class="d-flex align-items-center m-3">
+                                <button class="btn btn-primary" id="tinh">Tính lương</button>
+                                <div class="result__salary ml-5 text-danger text-uppercase font-weight-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Tính giá trị trung bình -->
+            <div class="tab-pane fade" id="pills-avarage" role="tabpanel" aria-labelledby="pills-avarage-tab">
+                <section id="avarage">
+                    <div class="container mt-3 d-flex justify-content-center">
+                        <div class="border border-primary">
+                            <div class="title text-center mt-3">
+                                <h2 class="bg-primary text-white d-inline-block p-3">Tính giá trị trung bình</h2>
+                            </div>
+    
+                            <form action="" class="form-inline m-3">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber1" class="mr-3">Nhập số thứ 1:</label>
+                                    <input type="number" class="form-control" id="inputNumber1" placeholder="Nhập số thứ 1">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber2" class="mr-3">Nhập số thứ 2:</label>
+                                    <input type="number" class="form-control" id="inputNumber2" placeholder="Nhập số thứ 2">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber3" class="mr-3">Nhập số thứ 3:</label>
+                                    <input type="number" class="form-control" id="inputNumber3" placeholder="Nhập số thứ 3">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber4" class="mr-3">Nhập số thứ 4:</label>
+                                    <input type="number" class="form-control" id="inputNumber4" placeholder="Nhập số thứ 4">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber5" class="mr-3">Nhập số thứ 5:</label>
+                                    <input type="number" class="form-control" id="inputNumber5" placeholder="Nhập số thứ 5">
+                                </div>
+                            </form>
+    
+                            <div class="d-flex align-items-center m-3">
+                                <button class="btn btn-primary" id="tinhTB">Tính giá trị trung bình</button>
+                                <div class="result__average ml-5 text-danger text-uppercase font-weight-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Quy đổi tiền -->
+            <div class="tab-pane fade" id="pills-convertUSDToVND" role="tabpanel" aria-labelledby="pills-convertUSDToVND-tab">
+                <section id="convertUSDToVND">
+                    <div class="container mt-3 d-flex justify-content-center">
+                        <div class="border border-primary">
+                            <div class="title text-center mt-3">
+                                <h2 class="bg-primary text-white d-inline-block p-3">Quy đổi tiền</h2>
+                            </div>
+    
+                            <form action="" class="form-inline m-3">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="moneyUSD" class="mr-3">Nhập số tiền USD:</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">$</div>
+                                        </div>
+                                        <input type="number" class="form-control" id="moneyUSD"
+                                            placeholder="Nhập số tiền USD" aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+    
+                            <div class="d-flex align-items-center m-3">
+                                <button class="btn btn-primary" id="quyDoi">Quy đổi</button>
+                                <div class="result__convert ml-5 text-danger text-uppercase font-weight-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Tính chu vi, diện tích hình chữ nhật -->
+            <div class="tab-pane fade" id="pills-rectangle" role="tabpanel" aria-labelledby="pills-rectangle-tab">
+                <section id="rectangle">
+                    <div class="container mt-3 d-flex justify-content-center">
+                        <div class="border border-primary">
+                            <div class="title text-center mt-3">
+                                <h2 class="bg-primary text-white d-inline-block p-3">Tính chu vi, diện tích hình chữ nhật
+                                </h2>
+                            </div>
+    
+                            <form action="" class="form-inline m-3">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputCD" class="mr-3">Nhập chiều dài:</label>
+                                    <input type="number" class="form-control" id="inputCD" placeholder="Nhập chiều dài">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputCR" class="mr-3">Nhập chiều rộng:</label>
+                                    <input type="number" class="form-control" id="inputCR" placeholder="Nhập chiều rộng">
+                                </div>
+                            </form>
+    
+                            <div class="d-flex align-items-center m-3">
+                                <button class="btn btn-primary" id="tinhToan">Tính</button>
+                                <div class="result__rectangle ml-5 text-danger text-uppercase font-weight-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Tính tổng 2 ký số -->
+            <div class="tab-pane fade" id="pills-total2Number" role="tabpanel" aria-labelledby="pills-total2Number-tab">
+                <section id="total2Number">
+                    <div class="container mt-3 d-flex justify-content-center">
+                        <div class="border border-primary">
+                            <div class="title text-center mt-3">
+                                <h2 class="bg-primary text-white d-inline-block p-3">Tính tổng 2 ký số
+                                </h2>
+                            </div>
+            
+                            <form action="" class="form-inline m-3">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="inputNumber" class="mr-3">Nhập số nguyên:</label>
+                                    <input type="number" class="form-control" id="inputNumber" placeholder="Nhập số nguyên">
+                                </div>
+                            </form>
+            
+                            <div class="d-flex align-items-center m-3">
+                                <button class="btn btn-primary" id="tinhTong">Tính tổng</button>
+                                <div class="result__totalNumber ml-5 text-danger text-uppercase font-weight-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
