@@ -1,4 +1,4 @@
-// BÀI TẬP 1
+// BÀI TẬP 1: Tính lương nhân viên 
 // MÔ HÌNH 3 KHỐI
 // Khối 1: Input
 /*
@@ -30,7 +30,7 @@ document.getElementById("tinh").onclick = function tinh(){
     document.querySelector(".result__salary").innerHTML = `Tổng lương: ${totalSalary}`;
 }
 
-// BÀI TẬP 2
+// BÀI TẬP 2: Tính giá trị trung bình
 // MÔ HÌNH 3 KHỐI
 // Khối 1: Input
 /*
@@ -67,7 +67,7 @@ document.getElementById("tinhTB").onclick = function tinhTB(){
     document.querySelector(".result__average").innerHTML = `Giá trị trung bình là: ${average}`
 }
 
-// BÀI TẬP 3
+// BÀI TẬP 3: Quy đổi tiền
 // MÔ HÌNH 3 KHỐI
 // Khối 1: Input
 /*
@@ -100,7 +100,7 @@ document.getElementById("quyDoi").onclick = function quyDoi(){
     document.querySelector(".result__convert").innerHTML = `Số tiền đã quy đổi: ${convertUSDtoVND}`;
 }
 
-// BÀI TẬP 4
+// BÀI TẬP 4: Tính chu vi, diện tích hình chữ nhật
 // MÔ HÌNH 3 KHỐI
 // Khối 1: Input
 /*
